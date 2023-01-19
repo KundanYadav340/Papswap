@@ -1,0 +1,30 @@
+.email-verification-div{
+    width: 96%;
+    padding: 12px 2%;
+    text-align: center;
+    height: 100vh;
+}
+.email-verification-div h3{
+    color:black;
+}
+.email-verification-div button{
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+    width: 80%;
+    margin: 10px;
+    max-width: 220px;
+}
+.email-verification-div .verified-btn{
+    background-color: darkblue;
+    color: white;
+}
+.email-verification-div .resend-mail{
+    border: 1px solid rgb(64, 127, 152);
+    color: rgb(51, 110, 134) ;
+}
+.email-verification-div .goto-login{
+    background-color: white;
+    color: darkblue;
+    border: 1px solid darkblue;
+}

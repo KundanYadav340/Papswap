@@ -1,0 +1,416 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.main-box{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.inner-box{
+    min-height: 200px;
+    display: inline-block;
+    /* vertical-align: middle; */
+    float: none;
+    margin: 0px;
+    margin-top: 0px;
+    max-width: 720px;
+
+}
+.left-box{
+}
+.right-box{
+}
+.content{
+    margin-left:30px;
+    margin-bottom:30px;
+}
+.initial-heading{
+    font-family: Source Sans Pro;
+    padding-right: 8px;
+    font-size: 28px;
+}
+.launching{
+    font-family: Fredoka One;
+    font-size: 5em;
+}
+/* .launching {
+	text-transform: uppercase;
+	background: linear-gradient(120deg,#30cfd0 10%, #e73c7e 80%,#30CFD0 80%, #330867 90%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: 60px;
+	font-family: Fredoka One;
+} */
+.launching {
+    /* background: linear-gradient(to right, #330867 20%, #e737c3 40%, #330867 60%, #30cfd0 80%); */
+    background: linear-gradient(to right, #0cdb1e 20%, #9ee737 40%, #330867 60%, #ec17f4 80%);
+    background-size: 200% auto;
+    color: #000;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: shine 3s linear infinite;
+            animation: shine 3s linear infinite;
+  }
+  @-webkit-keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }
+  @keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }
+  
+.right-box {
+	/* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+	/* background: linear-gradient(-45deg, #083691, #4b0754, #054268, #5a0c79); */
+    /* padding-top: 80px; */
+	background-size: 400% 400%;
+	/* animation: gradient 20s ease infinite; */
+	/* height: 100vh; */
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.card{
+    font-size:18px;
+    box-shadow: 2px 2px 5px #dfdfdf;
+    padding: 10px 10px;
+    margin-bottom: 5px;
+    border-radius: 15px;
+}
+.input-box{
+    text-align: center;
+    margin-top: 30px;
+}
+.input-box p{
+    font-size: 18px;
+    color:rgb(157, 40, 27);
+    font-weight: bold;
+}
+.input-box input{
+    border:none;
+    border:1px solid #400759;
+    border-radius: 15px;
+    background-color: white;
+    padding: 10px;
+    width: 30%;
+    color:#404040;
+    outline:none;
+    font-size: 16px;
+}
+.input-box button{
+    padding:11px;
+    /* min-width:20%; */
+    color: white;
+    background: linear-gradient(89deg, #400759 10%, #330867 60%);
+    border:none;
+    border-radius: 15px;
+    font-size: 16px;
+    margin-top: 8px;
+}
+.clock{
+    margin-top: auto;
+	background: linear-gradient(-45deg, #083691, #4b0754, #054268, #5a0c79);
+	/* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+	background-size: 400% 400%;
+    /* background: linear-gradient(89deg, #400759 10%, #330867 60%); */
+	animation: gradient 20s ease infinite;
+    padding: 50px 30px;
+    border-radius: 20px;
+}
+.slogan{
+    text-align: center;
+}
+.slogan h2{
+    color: white;
+    font-family: Chakra Petch;
+}
+.timer{
+    width:90%;
+    margin:0px auto;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+#time-component{
+    width:23%;
+    /* border:1px solid white; */
+    text-align: center;
+    box-shadow: 3px 3px 10px #330867;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.time-value{
+    width:100%;
+    padding: 30px 0px;
+    font-size: 44px;
+    font-weight: bold;
+    background: rgb(200, 200, 200, 0.2);
+    color: antiquewhite;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.time-value h2{
+    font-size: 44px;
+    font-family: Gemunu Libre;
+    margin: 0px;
+    text-shadow:3px 3px 10px gray;
+}
+.time-unit{
+    padding: 5px 0px;
+    width: 100%;
+    font-weight: bold;
+    background-color: white;
+}
+.details{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* box-shadow: 3px 3px 10px #330867; */
+}
+.details-box{
+    width:35%;
+    background-color: rgb(240, 240, 255,0.8);
+    padding: 10px;
+}
+.date{
+    border-right: 1px solid gray;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.location{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.detail-head{
+    text-align: center;
+    font-size: 16px;
+    color:#505050;
+}
+.detail-head span{
+   margin-left: 5px;
+}
+.details hr{
+    margin: 10px;
+    border-top: 1px solid #909090;
+}
+.detail-body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#303030;
+}
+#notify-err{
+    font-size: 12px;
+    font-weight: 400;
+    color: red;
+}
+.whatDo{
+    padding: 12px;
+    background-color: white;
+}
+.whatDo b{
+    color: darkblue;
+    padding-bottom: 3px;
+    font-size: 18px;
+}
+.whatDo div{
+    font-size: 16px;
+    font-family: sans-serif;
+    margin: 8px 0px;
+}
+.whoWe{
+    padding: 12px;
+}
+.whoWe b{
+    color: darkblue;
+    padding-bottom: 3px;
+    font-size: 18px;
+}
+.w-inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.cd{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid #dfdfdf;
+    margin: 10px 0px;
+    max-width: 480px;
+    border-radius: 8px;
+    box-shadow: 1px 2px 2px #efefef;
+    background-color: white;
+}
+.cd-img{
+    width:160px;
+}
+.cd-img img{
+    width: 160px;
+    border-radius: 6px;
+}
+.cd-text{
+    font-size: 16px;
+    font-family: sans-serif;
+    padding: 8px;
+}
+.l-footer{
+    background-color: gray;
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+@media screen and (max-width: 980px){
+    .right-box{
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+}
+@media screen and (max-width: 720px) {
+    .content{
+        margin-top: 30px;
+        margin-left:15px;
+    }
+    .main-box{
+        display: block;
+        width: 100%;
+    }
+    .left-box{
+        padding-left:0px;
+        padding-right: 0px; 
+    }
+    .initial-heading{
+        font-size: 20px;
+    }
+    .launching{
+        font-size: 4em;
+    }
+    .card{
+        width:100%;
+        font-size: 16px;
+    }
+    .input-box{
+        margin-top: 15px;
+    }
+    .input-box p{
+        font-weight: 600;
+        font-size:14px;
+    }
+    .main-box input{
+        padding: 8px;
+        font-size: 16px;
+        width:50%;
+    }
+    .main-box button{
+        padding: 9px;
+        width:25%;
+    }
+    .details-box{
+        width:45%;
+        padding: 8px;
+    }
+  }
+  @media screen and (max-width: 480px){
+    .main-box{
+        display: block;
+        width: 100%;
+    }
+    .right-box{
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .inner-box{
+        margin-top: 0px;
+        width: 100%;
+    }
+    .main-box input{
+        padding: 8px;
+        font-size: 16px;
+        width:80%;
+        margin-top: 8px;
+    }
+    .main-box button{
+        padding: 9px;
+        width:55%;
+    }
+    .cards{
+        padding-left: 5px;
+    }
+    .card{
+        font-size: 14px;
+        width: 90%;
+    }
+    .clock{
+        /* margin-top: 20px; */
+        padding: 15px 1px 15px 1px;
+        border-radius: 10px;
+        margin: auto;
+        width:100%;
+    }
+    .input-box input{
+        font-size: 14px;
+    }
+    .input-box button{
+        font-size: 14px;
+    }
+    .timer{
+        width:100%;
+        margin:0px auto;
+        padding: 0px 0px 10px 0px;
+    }
+    #time-component{
+        width:23%;
+        box-shadow: 2px 2px 15px #330867;
+    }
+    .time-value{
+        padding: 15px 5px;
+    }
+    .time-value h2{
+        font-size: 38px;
+        text-shadow:2px 2px 8px gray;
+    }
+    .time-unit{
+        padding: 5px 0px;
+        width: 100%;
+        font-weight: 400;
+        background-color: white;
+        font-size: 12px;
+    }
+    .details-box{
+        width:45%;
+        padding: 8px;
+    }
+    .detail-head{
+        font-size: 14px;
+    }
+    .detail-head span{
+       margin-left: 5px;
+    }
+    .details hr{
+        margin: 8px;
+    }
+    .detail-body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color:#303030;
+        font-size: 12px;
+    }
+  }

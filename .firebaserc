@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "papswap-83c5b",
+    "production": "papswap-83c5b"
+  },
+  "targets": {},
+  "etags": {}
+}

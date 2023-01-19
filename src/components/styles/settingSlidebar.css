@@ -1,0 +1,52 @@
+.setting-slide{
+    position: fixed;
+    width:360px;
+    top: 0px;
+    right: 0px;
+    padding: 20px 10px;
+    background-color: white;
+    border-left: 1px solid gray;
+    height: 100vh;
+    z-index:499;
+}
+.setting-slide .head{
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: bold;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.setting-slide .head span{
+    color: red;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+.setting-slide .button-box button{
+    width: 98%;
+    text-align: left;
+    padding: 10px;
+    font-size: 20px;
+    font-family: Source Sans Pro;
+    border-radius: 8px;
+    border: none;
+    background-color: white;
+}
+.setting-slide .button-box button:hover{
+    background-color: #f1f1f1;
+}
+.setting-slide .button-box button span{
+    font-size: 22px;
+    margin-right: 8px;
+    font-weight: 100;
+    height: fit-content;
+}
+.logout-btn{
+    color:rgb(201, 27, 27);
+}
